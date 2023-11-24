@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/establish_retrosans"
+        android:text="MBTI"
+        android:textColor="#03C65A"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jaram"
+        android:text="성격 유형 검사"
+
+        android:textColor="#30925D"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_mainTitle"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="@+id/tv_mainTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mainTitle" />
+
+    <ImageView
+        android:id="@+id/iv_start"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/iv_people"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subTitle"
+        app:srcCompat="@drawable/ic_start" />
+
+    <ImageView
+        android:id="@+id/iv_people"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bg_person2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
